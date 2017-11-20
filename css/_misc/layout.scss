@@ -1,0 +1,64 @@
+
+// стили проекта
+
+html {
+  // font-size: 2.37vmin;
+  @include tablets {
+    font-size: rem(14px);
+  }
+
+  @include phones {
+    font-size: rem(12px);
+  }
+}
+
+body {
+  font-size: rem(16px);
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  @include ubuntu();
+  color: $black;
+  // display:none;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 95%;
+  max-width: rem(1100px);
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  // min-width: 940px + 20px;
+  min-height: 100%;
+  overflow: hidden;
+  // display:none;
+}
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+// .overlay{
+//    width:100%;
+//     min-height:100%;
+//     background-color: rgba(0,0,0,0.5);
+//     overflow:hidden;
+//     position:fixed;
+//     top:0;
+//     left:0;
+//     z-index:1200;
+// }
+
+

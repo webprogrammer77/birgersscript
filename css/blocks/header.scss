@@ -1,0 +1,30 @@
+ 
+ .header{
+ 	position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding-top: rem(10px); 
+	@include flex-center(row);
+  z-index: 999;
+ 
+}
+
+.header__btns{
+	margin-left: auto;
+
+}
+.header__links {
+  display: flex;
+  align-items: center;
+  @include desktop-mini{
+    margin-right: rem(30px);
+  }
+}
+.header__menu {
+	flex: 1;
+	text-align: right;
+
+ 
+}

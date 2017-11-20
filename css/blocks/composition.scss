@@ -1,0 +1,144 @@
+
+// ======= иконка------------
+.compositon{
+	border-radius: rem(5px);
+	background-color: rgba($red, 0.6);
+	position: absolute;
+	padding: 3%;
+	left: rem(0px);
+	top: rem(0px);
+	width: rem(90px);
+	min-width:rem(90px);
+	height: rem(90px);
+	min-height: rem(90px);
+	width: rem(90px);
+	z-index: 136;
+	@include flex-center(column);
+	flex: auto;	
+	
+	&:hover, &.active {
+		background-color: $red;
+		&.active + .composition-desc{
+			transform: scale(1);
+		}
+	}
+	transition: 0.3s;
+	@include tablets{
+		top: rem(0px);
+	}
+	@include  phones{
+		// left: rem(30px);
+		// top: rem(30px);
+	}
+}
+.compositon__pic{
+		width: rem(46px);
+		height: rem(46px);
+		min-height: rem(46px);
+		min-width: rem(46px);
+		min-width:100%;
+	}
+.compositon__ins{
+	@include gagalin;
+	font-size: rem(14px);
+	color: #fff;
+}
+
+
+// ------иконка конец------------
+
+// ===== всплывашка начало =======
+
+.composition-desc{
+	
+  background-color: rgba(255, 255, 255, .9);
+ 	width: rem(270px);
+  height: rem(332px);
+  position: absolute;
+  color: $black;
+  @include ubuntu(medium);
+  font-size: rem(14px);
+  border-radius: rem(5px);
+  top: rem(0px);
+  left: rem(90px);
+  transform: scaleY(0);
+  transform-origin: 0 0 ; 
+  transition: 0.7s;
+  z-index:101;
+  @include tablets{
+  	top: rem(0px);
+  	width: 60%;
+  	min-width: rem(200px)
+  }
+  @include  phones{
+		
+		width: 70%;
+	}
+}
+.composition-desc__container{
+	position: relative;
+	width:100%;
+	height: 100%;
+	  @include tablets{
+  	
+  	padding-right: 10%;
+  }
+}
+.composition-desc__close-link{
+	display: none;
+	z-index:103;
+	@include tablets{
+		display:block;
+		position:absolute;
+	top: rem(20px);
+	right: rem(20px);
+	width: rem(15px);
+	height: rem(15px);
+	}
+
+}
+.composition-desc__close-icon{
+	display:block;
+	// position: absolute;
+	width: rem(15px);
+	height: rem(15px);
+	margin: auto;
+	// stroke: #e25028;
+	use {
+		transition: fill .3s;
+	}
+}
+
+.compositon-desc__list{
+	// @include flex-center(column);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+	width: 100%;
+	height: 100%;
+	padding: 10%;
+	z-index:102;
+}
+.composition-desc__item{
+ display: flex;
+ justify-content:space-between;
+ align-items:center;
+ width: 100%;
+ overflow:hidden;
+}
+.compositon-desc__pic{
+	width: rem(40px);
+	max-width:100%;
+	min-width:rem(20px);
+  height: rem(40px);
+ }
+.compositon-desc__ins{
+	margin-left: 10%;
+	@include ubuntu(mediun);
+}
+.compositon-desc__weight{
+	@include ubuntu(light);
+	margin-left: auto;
+}
+// ===== всплывашка конец =======

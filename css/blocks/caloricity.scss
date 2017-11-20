@@ -1,0 +1,40 @@
+.caloricity{
+	position: absolute;
+	z-index: 100;
+	@include gagalin;
+	color:#fff;	
+	opacity: 0.5;
+	@include flex-center(column);
+	bottom: rem(0px);
+	// bottom: 10%;
+	left: 0%;
+	@include tablets{
+		bottom: auto;
+		left: auto;
+		top: rem(0px);
+		right: 0%;
+	}
+	@include phones{
+		// bottom: auto;
+		// left: auto;
+		// top: rem(30px);
+		// right: rem(30px);
+	}
+}
+.caloricity__pic{
+	width: rem(65px);
+	min-width: rem(65px);
+	height:rem(65px);
+	@include cover;
+	@include flex-center(column);
+
+}
+.caloricity__count{
+	font-size: rem(20px);
+	line-height: 1.2;
+	margin-top: 35%;
+}
+.caloricity__ins{
+	font-size: rem(14px);
+	line-height: 1.714;
+}

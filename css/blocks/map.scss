@@ -1,0 +1,28 @@
+.map{
+	@include tablets{
+		width: 100vw !important;
+		// height: 100vh;
+	}
+}
+.yandex-map {
+	// background: url('../../img/bg/contacts-bg.jpg') no-repeat 100% 0;
+	@include cover; 
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+}
+.ymaps-2-1-56-image {
+		width: rem(46px)!important;
+			height: rem(57px)!important;
+			background-size: rem(46px) rem(57px) !important;		
+	}
+	.ymaps-2-1-56-map  {
+		width: 100% !important;
+		// height: 100% !important;
+		// background-size: 100vw 100vh !important;
+		// background-position: 0 0 !important;
+		// height: 100vh !important;
+	}

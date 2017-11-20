@@ -1,0 +1,43 @@
+.team {
+	@include section-bg('../../img/bg/team-bg.jpg');
+	position: relative;
+  min-height:rem(750px);
+
+	.section__title {
+    height: 34%;
+    width: 100%;
+    display:flex;
+    align-items:center;
+    @include tablets{
+      justify-content:center;
+      height: 25%;
+    }
+	}
+}
+.team__section {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background: rgba(#2f3234, .93);
+  padding: 0% 2% 0 7%;
+  @include flex-center(column);
+
+  @include tablets {
+    width: 100%;
+    padding: 0;
+  }
+}
+.team__content {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  @include flex-center(column);
+  align-items: flex-start;
+  @include tablets{
+    align-items: center;
+    text-align: center;
+  }
+}
+

@@ -1,0 +1,29 @@
+.down-arrow {
+  position: absolute;
+  bottom: rem(20px);
+  left: 45% ;
+  width: rem(60px);
+  transform: translateX(-50%);
+  transition: .3s;
+  height: rem(60px);
+  @include flex-center(row);
+  animation: ArrowDown 0.7s infinite alternate;
+  &:hover {
+    .down-arrow__icon {
+      transform:scale(1.1);
+      // width: rem(45px);
+      // height: rem(45px);
+    }
+  }
+}
+
+.down-arrow__icon {
+  width: rem(40px);
+  height: rem(40px);
+  transition: .3s;
+  fill: #fff;
+    &:hover{
+      fill: $yellow;
+      
+    }
+}

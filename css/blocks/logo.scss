@@ -1,0 +1,16 @@
+.logo{	
+		
+
+}
+.logo__img {
+	max-width: 95%;
+	height: rem(75px);
+	transition: 0.4s;
+	path:nth-child(1) {
+		fill: $orange;
+		}
+
+		&:hover, &:active{
+			filter: hue-rotate(90deg);			
+		}
+}

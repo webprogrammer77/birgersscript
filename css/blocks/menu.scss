@@ -1,0 +1,17 @@
+.menu {
+	@include section-bg('../../img/bg/menu-bg.jpg');
+	position: relative;
+	 @include tablets{
+		height: auto;
+  }
+  
+}
+
+.menu__title {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	@include tablets{
+		left: 3%;
+	}
+}
