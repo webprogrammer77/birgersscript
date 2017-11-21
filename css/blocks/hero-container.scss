@@ -1,5 +1,5 @@
 .hero {  
-  @include section-bg('../../img/bg/hero-bg.jpg');
+  @include section-bg('../img/bg/hero-bg.jpg');
   position: relative;
 		@include desktop-mini{
 			height: auto;

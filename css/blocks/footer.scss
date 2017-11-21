@@ -1,10 +1,11 @@
 .footer {
-  @include section-bg('../../img/bg/footer-bg.jpg');
+  @include section-bg('../img/bg/footer-bg.jpg');
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   padding: rem(10px) 0;
+  z-index: 11;
 }
 
 .footer__container {

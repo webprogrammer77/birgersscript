@@ -1,5 +1,5 @@
 .menu {
-	@include section-bg('../../img/bg/menu-bg.jpg');
+	@include section-bg('../img/bg/menu-bg.jpg');
 	position: relative;
 	 @include tablets{
 		height: auto;

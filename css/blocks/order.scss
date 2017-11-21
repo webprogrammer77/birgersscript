@@ -8,7 +8,7 @@ textarea:focus{
   outline:none;
 }
 .order {
-  @include section-bg('../../img/bg/order-bg.jpg');
+  @include section-bg('../img/bg/order-bg.jpg');
   display: flex;
   align-items: center;
 
