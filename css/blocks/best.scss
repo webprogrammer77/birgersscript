@@ -1,5 +1,5 @@
 .best {
-  @include section-bg('/img/bg/best-bg.jpg');
+  @include section-bg('../img/bg/best-bg.jpg');
   text-align: center;
   display: flex;
   align-items: center;
