@@ -11,6 +11,11 @@
     @content;
   }
 }
+@mixin before-tablets {
+  @media screen and (min-width: $tablets) {
+    @content;
+  }
+}
 
 @mixin phones {
   @media screen and (max-width: $phones) {

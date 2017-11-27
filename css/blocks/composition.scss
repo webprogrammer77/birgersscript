@@ -26,9 +26,10 @@
 	@include tablets{
 		top: rem(0px);
 	}
-	@include  phones{
-		// left: rem(30px);
-		// top: rem(30px);
+	@include  before-tablets{
+		&:hover + .composition-desc{
+			transform: scale(1);
+		}
 	}
 }
 .compositon__pic{

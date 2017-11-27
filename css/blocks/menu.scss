@@ -1,8 +1,10 @@
 .menu {
 	@include section-bg('../img/bg/menu-bg.jpg');
 	position: relative;
+
 	 @include tablets{
 		height: auto;
+		width: 100vw;
   }
   
 }
@@ -12,6 +14,6 @@
 	top: 10%;
 	left: 10%;
 	@include tablets{
-		left: 3%;
+		left: 5%;
 	}
 }

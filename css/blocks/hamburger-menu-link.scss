@@ -4,21 +4,31 @@
 	height: rem(22px);
 	align-items: center;
 	margin-left: rem(30px);
-  display: none;	
+  display: none;
+  border-radius: 50%;	
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 5px  rgba(0, 0, 0, 0.1);
+  transition:.3s;
   @include desktop-mini{
   	position: fixed;
   	right: rem(10px);
     display: flex;
+    &:hover{
+    	background: rgba($red, 0.7);
+  	box-shadow: 0 0 0 5px  rgba($red, 0.7)
+    }
   }
   &:hover *, &:hover *:before, &:hover *:after {
-  	@include light;
-  	background-color: $orange;
+  	// @include light;
+  	// background-color: $orange;
   }
   
 }
 
 .hamburger-menu-link__bars {
+
 	&, &:before, &:after {
+
 		background: #fff;
 		width: rem(24px);
 		height: rem(5px);
@@ -34,7 +44,7 @@
 		display: block;
 		position: absolute;
 	}
-
+top: 5px;
 	&:before {
 		top: 0;
 	}

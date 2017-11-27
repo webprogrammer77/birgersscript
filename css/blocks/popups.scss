@@ -1,5 +1,5 @@
 
-.popup{border: 1px solid red;
+.popup{
 display:none;
 
 }
@@ -54,7 +54,7 @@ display:none;
 		height: 100%;
 	}
 }
-.status-popup{border: 1px solid red;
+.status-popup{
 	@include overlay;
 	background-color: transparent;
 	

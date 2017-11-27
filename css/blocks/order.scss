@@ -152,7 +152,7 @@ textarea:focus{
   .order__radio-elem:checked {
     &+.order__radio-fake {
       &:after {
-        background: url("../../img/icons/check.svg") 50% no-repeat ;
+        background: url("../img/icons/check.svg") 50% no-repeat ;
         background-size: contain;
         width: rem(15px);
         height: rem(15px);
@@ -186,3 +186,5 @@ textarea:focus{
    transition: .3s;
  
 }
+input:invalid:not(:placeholder-shown) {border-color: red;}
+input:valid:not(:placeholder-shown) {border-color: green;}
